@@ -45,11 +45,12 @@ namespace TranslatorConsole
         static void Main(string[] args)
         {
             string text = GetText(args);
-            string fromLang = GetLang(args, 1, "На какой язык переводить? (en, ru, de, ...)");
-            string toLang = GetLang(args, 2, "С какого языка переводить? (en, ru, de, ..., пусто - автоопределение)");
+            string toLang = GetLang(args, 1, "На какой язык переводить? (en, ru, de, ...)");
+            string fromLang = GetLang(args, 2, "С какого языка переводить? (en, ru, de, ..., пусто - автоопределение)");
 
             ITranslator translator = new XmlTranslator();
 
+            Console.WriteLine("Перевод:");
             Console.WriteLine(translator.Translate(text, toLang, fromLang));
         }
     }
