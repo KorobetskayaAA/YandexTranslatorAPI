@@ -7,13 +7,8 @@ using System.IO;
 
 namespace TranslatorLibrary
 {
-    public class XmlTranslator : ITranslator
+    public class XmlTranslator : Translator, ITranslator
     {
-        string GetAPIKey()
-        {
-            return Properties.Resources.APIKey;
-        }
-
         //https://translate.yandex.net/api/v1.5/tr/translate
         //         ? [key=<API-ключ>]
         //         & [text=<переводимый текст>]
@@ -28,7 +23,7 @@ namespace TranslatorLibrary
                 string.IsNullOrWhiteSpace(fromLanguage) ? toLanguage : fromLanguage + "-" + toLanguage);
         }
 
-        public string Translate(string text, string toLanguage, string fromLanguage = "")
+        public override string Translate(string text, string toLanguage, string fromLanguage = "")
         {
             WebRequest request = WebRequest.Create(GetTranslateRequest(text, toLanguage, fromLanguage));
             WebResponse response = request.GetResponse();
