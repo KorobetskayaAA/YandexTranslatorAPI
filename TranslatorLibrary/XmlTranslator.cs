@@ -9,11 +9,9 @@ namespace TranslatorLibrary
 {
     public class XmlTranslator : ITranslator
     {
-        const string KeyFileName = "APIKey.txt";
-
         string GetAPIKey()
         {
-            return File.ReadAllText(KeyFileName);
+            return Properties.Resources.APIKey;
         }
 
         //https://translate.yandex.net/api/v1.5/tr/translate
@@ -38,7 +36,7 @@ namespace TranslatorLibrary
             {
                  XmlSerializer serializer = new XmlSerializer(typeof(Translation));
                  Translation translation = serializer.Deserialize(fs) as Translation;
-                 return translation.Text;
+                 return translation.text;
            }
 
         }

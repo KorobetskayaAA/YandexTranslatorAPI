@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Xml.Serialization;
 
 /* Поимер ответа от Яндекса:
  * <?xml version="1.0" encoding="utf-8"?>
@@ -9,10 +10,12 @@
 
 namespace TranslatorLibrary
 {
-    class Translation
+    public class Translation
     {
-        public int code { get; set; }
+        [XmlAttribute]
+        public string code { get; set; }
+        [XmlAttribute]
         public string lang { get; set; }
-        public string Text { get; set; }
+        public string text { get; set; }
     }
 }
