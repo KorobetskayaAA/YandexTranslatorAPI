@@ -7,7 +7,7 @@ using System.IO;
 
 namespace TranslatorLibrary
 {
-    class XmlTranslator : ITranslator
+    public class XmlTranslator : ITranslator
     {
         const string KeyFileName = "APIKey.txt";
 
