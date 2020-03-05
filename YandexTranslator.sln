@@ -10,6 +10,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TranslatorConsole", "Transl
 		{4931E6E5-5D90-4259-B5FB-60E0664F2855} = {4931E6E5-5D90-4259-B5FB-60E0664F2855}
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfYandexTranslator", "WpfYandexTranslator\WpfYandexTranslator.csproj", "{EDF90E30-4053-4B2F-AF51-E2E79F800C7C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,6 +26,10 @@ Global
 		{5DBD1322-9306-49EF-A27B-66357F6CD226}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5DBD1322-9306-49EF-A27B-66357F6CD226}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5DBD1322-9306-49EF-A27B-66357F6CD226}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EDF90E30-4053-4B2F-AF51-E2E79F800C7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDF90E30-4053-4B2F-AF51-E2E79F800C7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDF90E30-4053-4B2F-AF51-E2E79F800C7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDF90E30-4053-4B2F-AF51-E2E79F800C7C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
